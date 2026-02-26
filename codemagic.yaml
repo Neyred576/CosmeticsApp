@@ -13,7 +13,7 @@ workflows:
           npm install
       - name: Install CocoaPods
         script: |
-          cd ios && pod install
+          cd ios && pod install --repo-update
       - name: Build IPA
         script: |
           xcode-project build-ipa \
